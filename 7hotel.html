@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The 7 Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/7hotel.css">
+
+    
+    <style>
+        
+      .js .slider-single > div:nth-child(1n+2) { display: none }
+      
+      .js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+   
+      
+      .slider-single h3 {
+        line-height: 10rem;
+      }
+      
+      .slider-nav h3::before {
+        content: "";
+        display: block;
+        padding-top: 75%;
+      }
+      
+      .slider-nav h3 span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      .slider-nav .slick-slide { cursor: pointer; }
+      
+      .slick-slide.is-active h3 {
+        color: #c00;
+        background-color: #fff
+      }
+          </style>
+</head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+           
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="7hotel.html">Homepage</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="7hotel-about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="room-scrollerview.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Rooms
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="room-scrollerview.html">Rooms scroller view</a></li>
+                      <li><a class="dropdown-item" href="private-pool.html">Two Bedroom Pool Villa</a></li>
+                      <li><a class="dropdown-item" href="twobedroom-sea.html">Two Bedroom Sea Villa</a></li>
+                      <li><a class="dropdown-item" href="queen.html">Queen Terrace</a></li>
+                      <li><a class="dropdown-item" href="deluxe-tween.html">Deluxe tween</a></li>
+                      <li><a class="dropdown-item" href="private-pool.html">Suite With Private Pool</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dining.html">Dining</a>
+                  </li>
+                </ul>
+
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.webp" alt="">
+                </a>
+
+
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-right">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="wellnes.html">Wellness</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link book-now" href="#">Book Now</a>
+                  </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+       
+
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/home-slider1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Learn The Meaning Of <br>Exclusine Privacy</h1>
+                  <p>Mauris varius interdum erat, et ultrices justo imperdiet nec.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/home-slider2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Luxury Private Beach </h1>
+                  <p>Some representative placeholder <br>content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/home-slider3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Luxutious Design</h1>
+                  <p>Some representative placeholder content <br>for the third slide.</p>
+                </div>
+              </div>
+            
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+    </header>
+  
+
+    <section class="learn">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="learn-img"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="learn-info">
+                        <p>WELCOME TO THE7 HOTEL</p>
+                        <h2>Learn the meaning of exclusive privacy</h2>
+                        <p class="para">Mauris varius interdum erat, et ultrices justo imperdiet nec. Cras ac porttitor tortor, id iaculis neque. Fusce et malesuada nibh, et consectetur risus. Suspendisse dictum orci eget cursus viverra. Vestibulum a mauris urna. Aliquam eget risus vitae lorem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="offer text-center">
+        <div class="overlay">
+        <div class="container">
+            <h6>HOT OFFER! EVERY MONDAY IN 2020</h6>
+            <h2>Enjoy 25% Off In Our Signature Spa</h2>
+            <p>Check our spa menu</p>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="top-rooms">
+        <div class="container">
+          <div class="text-center special-heading">
+            <h2>Our Top 3 Rooms</h2>
+            <p>Stylish accommodation option at The7 Hotel<br>
+                with customized interiors and essential home comforts.</p>
+              </div>
+                <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="room-info">
+                        <img src="assets/images/rooms1.jpg" alt="">
+                        <h5>Prices start at: $600 per night</h5>
+                        <h3><a href="#">Two Bedroom Sea Villa</a></h3>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="room-info">
+                    <img src="assets/images/rooms2.jpg" alt="">
+                    <h5>Prices start at: $500 per night</h5>
+                    <h3><a href="#">Suite With Private Pool</a></h3>
+                    <a href="#">View Details</a>
+                </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="room-info">
+                    <img src="assets/images/rooms3.jpg" alt="">
+                    <h5>Prices start at: $500 per night</h5>
+                    <h3><a href="#">Suite With Private Pool</a></h3>
+                    <a href="#">View Details</a>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="check">
+      <div class="container">
+        <div class="check-item">
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="check-part">
+            <label>check-in</label>
+            <input type="text" placeholder="Check-in Date">
+          </div>
+          </div>
+          <div class="col-md-3">
+            <div class="check-part">
+            <label>check-Out</label>
+            <input type="text" placeholder="Check-out Date">
+          </div>
+          </div>
+          <div class="col-md-2">
+            <div class="check-part">
+            <label>Adults </label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>1</option>
+              <option value="1">2</option>
+              <option value="2">3</option>
+              <option value="3">4</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-md-2">
+            <div class="check-part">
+            <label>Children </label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected> 0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          </div>
+          <div class="col-md-2">
+            <div class="check-part">
+            <button class="hotel-btn"><a href="#">Search</a></button>
+          </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="dining">
+      <div class="container">
+        <div class="row">
+        
+          <div class="col-md-6">
+            <div class="dining-info">
+            <h2>Local Dining With The7 Hotel</h2>
+            <p>In volutpat vehicula iaculis. Nullam dapibus velit vel suscipit malesuada. Morbi tincidunt, dui tristique tincidunt faucibus, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat.</p>
+            <a href="#">Read More</a>
+            <span></span>
+          </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="dining-img">
+            
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="services">
+      <div class="container">
+        <h2>The7 Hotel Services</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="serv-item">
+              <img src="assets/images/services1.jpg" alt="">
+              <h6>Best Restaurants</h6>
+              <h4>Dinner With The7 Hotel</h4>
+              <a href="#">View more</a>
+            </div>  
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="serv-item">
+              <img src="assets/images/service2.jpg" alt="">
+              <h6>Wellness & Spa</h6>
+              <h4>Relaxing With The7 Hotel</h4>
+              <a href="#">View more</a>
+            </div>  
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="serv-item">
+              <img src="assets/images/service3.jpg" alt="">
+              <h6>Services</h6>
+              <h4>Car Rentals</h4>
+              <a href="#">View more</a>
+            </div>  
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="address">
+              <img src="assets/images/logo.webp" alt="">
+              <ul class="list-unstyled">
+                <li>GALE SOUTH BEACH, FL</li>
+                <li>(455) 322-8450</li>
+                <li>the7hotel@com</li>
+              </ul>
+              <div class="brands">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="more">
+              <h4>More</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="#">Special offers</a></li>
+                <li><a href="#">Available services</a></li>
+                <li><a href="#">Guest Information</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>Search Availability</h4>
+            <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div>
+                  <label>Check-In</label>
+                  <input type="date" placeholder="Check In Date">
+                </div>
+                <div>
+                  <label>Adults:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </form>
+              <button class="hotel-btn"><a href="#">Search</a></button>
+
+            </div>
+            <div class="col-md-6">
+              <form>
+                <div>
+                  <label>Check-out</label>
+                  <input type="date" placeholder="Check Out Date">
+                </div>
+                <div>
+                  <label>Children:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copy">
+      <p> Dream-Theme — truly premium WordPress themes</p>
+    </div>
+
+
+    <div id="scroll-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery-migrate.js"></script>
+    <script src="assets/plugin/slick-1.8.1/slick/slick.js"></script>
+    <script src="assets/js/7hotel.js"></script>
+    <script>
+      $(document).ready(function(){
+        var scrollButton = $('#scroll-top'),
+            head=$('.about-nav');
+            navbar=$('nav')
+      $(window).scroll(function() {
+        $(this).scrollTop() >= 200 ? scrollButton.show() : scrollButton.hide();
+        $(this).scrollTop() >= 200 ? head.addClass('sticky'): head.removeClass('sticky');
+        $(this).scrollTop() >= 200 ? navbar.addClass('sticky'): navbar.removeClass('sticky');
+
+      });
+      scrollButton.click(function() {
+        $('html,body').animate({ 
+          scrollTop : 0 
+        }, 600);
+      });
+  
+          $('.slider-single').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: true,
+     fade: false,
+     adaptiveHeight: true,
+     infinite: false,
+    useTransform: true,
+     speed: 400,
+     cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+   });
+  
+   $('.slider-nav')
+     .on('init', function(event, slick) {
+       $('.slider-nav .slick-slide.slick-current').addClass('is-active');
+     })
+     .slick({
+       slidesToShow: 7,
+       slidesToScroll: 7,
+       dots: false,
+       focusOnSelect: false,
+       infinite: false,
+       responsive: [{
+         breakpoint: 1024,
+         settings: {
+           slidesToShow: 5,
+           slidesToScroll: 5,
+         }
+       }, {
+         breakpoint: 640,
+         settings: {
+           slidesToShow: 4,
+           slidesToScroll: 4,
+        }
+       }, {
+         breakpoint: 420,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 3,
+      }
+       }]
+  
+      
+     });
+  
+   $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
+     $('.slider-nav').slick('slickGoTo', currentSlide);
+     var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+     $('.slider-nav .slick-slide.is-active').removeClass('is-active');
+     $(currrentNavSlideElem).addClass('is-active');
+   });
+  
+   $('.slider-nav').on('click', '.slick-slide', function(event) {
+     event.preventDefault();
+     var goToSingleSlide = $(this).data('slick-index');
+  
+     $('.slider-single').slick('slickGoTo', goToSingleSlide);
+   });
+
+   $('#book-now').click(function () {
+      // console.log("ghsjjjsjjs");
+      $('html, body').animate({
+            
+            scrollTop: $('.footer').offset().top
+            
+        },500); 
+     
+
+    });
+
+    
+  });
+
+
+  
+  
+    </script>
+
+  </body>
+  </html>
